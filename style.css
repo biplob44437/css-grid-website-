@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.fixed-width{
+  width: 90%;
+  margin: auto;
+}
+body{
+  overflow-x: hidden;
+}
+/* header css */
+.header{
+  background-color: rgb(90, 89, 87);
+
+}
+.header-left{
+  float: left;
+  width: 30%;
+}
+.header-left img{
+  max-width: 100%;
+  width: 80px;
+}
+.header-right{
+  float: right;
+  width: 70%;
+
+}
+.header-right ul{
+  display: block;
+}
+.header-right ul li{
+  display: inline-block;
+}
+.header-right ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px ;
+  font-size: 25px;
+  color: rgb(255, 241, 241);
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* banner */
+.banner{
+background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnH5I5yNXNEj6D5hkXCWFYfCwq2Ut8os3LBhMaHrJAg3K3R1ct7ylev_a2kAD0HXxqLfZbgSpEHylNDXC1qXjsP-fIGBhVeb2t8U4iXcAtqJRooAEIa9nxygUYPtMZ-bPq1iJdNqYEVJdGThj2FbtEzjQHNVC5zR-CCgCsj5pFikIlOsyswYTRw1DkRg/s626/pink-neon-night-business-sign_23-2148874638.jpg) center center;
+  height: 500px;
+  background-size: cover;
+  opacity: 0.7;
+
+
+}
+.banner-text{
+
+}
+.banner-text h1{
+  text-align: center;
+  color: #f60c0c;
+  font-size: 60px;
+
+  text-transform: uppercase;
+}
+.mid-content{
+  text-align: center;
+  margin-top: 20px;
+}
+.btn{
+  background-color: #ffffff;
+  padding: 22px 32px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 20px ;
+  color: black;
+  font-size: 20px ;
+  transition: .5s;
+}
+.btn:hover{
+  background-color: rgb(255, 5, 13);
+}
+
+/* banner-logo */
+.banner-logo1{
+  margin-top: 15px ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+}
+.banner-logo1 h4{
+margin-top: 10px;
+}
+/* lbanner logo end  */
+
+/* project start  */
+.project{
+  margin-top: 15px ;
+  display: grid;
+  grid-template-columns:   3fr  ;
+  text-align: center;
+
+
+}
+.project-text{
+  margin-top: 50px ;
+}
+.project-text h1{
+  font-size: 50px;
+}
+.project-text p{
+  font-size: 20px;
+
+}
+
+.btn2{
+  background-color: #dc1414;
+  padding: 22px 32px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 20px ;
+  color: black;
+  font-size: 20px ;
+  transition: .5s;
+  margin-top: 40px;
+  display: inline-block;
+}
+.btn2:hover{
+  background-color: rgb(255, 253, 254);
+}
+
+
+/* project end  */
+/*  */
+.discus-img{
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr ;
+  margin-top: 20px;
+
+}
+.discus-img img{
+  display: inline-block;
+  text-align: center;
+  max-width: 100%;
+}
+.first-img img{
+  border-radius: 50%;
+}
+
+.mid-img img{
+  border-radius: 50%;
+  width: 500px;
+  text-align: center;
+  display: inline-block;
+}
+.last-img img{
+  border-radius: 50%;
+}
+
+/*  */
+
+.portfolio-text h1{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+.portfolio-img{
+  display: grid ;
+  grid-template-columns: repeat(auto-fit ,minmax(400px,2fr)) ;
+  grid-gap: 4px;
+  grid-auto-flow: dense;
+  margin-top: 10px;
+}
+.portfolio-img img{
+  max-width: 100%;
+  width: 600px; 
+  
+}
+.portfolio-img img:hover{
+  background-color: beige;
+  opacity: 0.7;
+}
+/*  */
+/* about  */
+
+.about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+
+}
+.about-img img{
+  max-width: 100%;
+  width: 700px;
+  border-radius: 10px;
+}
+
+.about-text{
+  text-align: center;
+  margin-top: 200px;
+}
+.about-text h1{
+  font-size: 60px;
+}
+.about-text p{
+  font-size: 20px ;
+  line-height: 3.8rem;
+}
+
+
+/* footer  */
+.footer{
+  background-color: black;
+  padding: 10px 20px ;
+
+}
+.footer p{
+  color: white;
+  text-align: center;
+}
+
+
+/* responsice code  */
+@media only screen and (max-width: 768px) {
+  .header-right ul li a {
+    padding: 10px 7px;
+    font-size: 18px;
+}
+.banner-text h1 {
+  font-size: 24px;
+}
+.banner-logo1 {
+
+  grid-template-columns: 1fr 1fr;
+}
+.banner {
+  height: 255px;
+}
+.project-text h1 {
+  font-size: 39px;
+}
+.project-text p {
+font-size: 15px;
+}
+.contact {
+  grid-template-columns: 1fr;
+}
+.about {
+
+  grid-template-columns: 1fr;
+
+}
+.about-img img {
+  max-width: 100%;
+  width: 730px;
+  border-radius: 10px;
+}
+
+.about-text p {
+  font-size: 15px;
+  line-height: 3.8rem;
+}
+.portfolio-img img {
+
+  width: 720px;
+}
+}
